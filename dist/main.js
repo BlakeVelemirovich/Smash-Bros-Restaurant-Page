@@ -1,0 +1,1 @@
+(()=>{let e=document.createElement("h1"),t=document.createTextNode("Super Smash Brothers!");e.appendChild(t),document.querySelector("#content").appendChild(e)})();
