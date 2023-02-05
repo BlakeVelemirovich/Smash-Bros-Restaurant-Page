@@ -1,1 +1,1 @@
-(()=>{let e=document.createElement("h1"),t=document.createTextNode("Super Smash Brothers!");e.appendChild(t),document.querySelector("#content").appendChild(e)})();
+(()=>{let e=document.createElement("h1"),t=document.createTextNode("Super Smash Brothers!");e.appendChild(t);let n=document.querySelector("#content");n.appendChild(e);let d=function(e){let t=document.createElement("button"),d=document.createTextNode(e);t.appendChild(d),n.appendChild(t)};window.onload=()=>{d("Home"),d("Characters"),d("About Me")}})();
