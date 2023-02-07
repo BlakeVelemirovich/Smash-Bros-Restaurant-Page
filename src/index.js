@@ -1,3 +1,5 @@
+import createHome from "./Home";
+
 // Header title Creation
 let homeTitle = document.createElement('h1');
 let titleText = document.createTextNode('Super Smash Brothers!');
@@ -30,18 +32,5 @@ window.onload = () => {
         createButtons('About Me');
 }
 
-//Content 
-let contentContainer = document.createElement('div');
-contentContainer.className = 'contentContainer';
-contentSelector.appendChild(contentContainer);
-
-let contentP = document.createElement('p');
-let contentText = document.createTextNode('This website is all about my personal Super Smash Bros. journey. It is a platform to showcase my history and evolution as a Smash player, including my favorite characters, notable victories, and milestones in my Smash career.');
-contentP.appendChild(contentText);
-contentContainer.appendChild(contentP);
-
-let contentImage = document.createElement('img');
-contentImage.className = 'contentImage';
-contentImage.src = '../images/Smash.png';
-contentContainer.appendChild(contentImage);
-
+//Initial invoking of the Home Page
+contentSelector.appendChild(createHome());
