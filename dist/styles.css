@@ -1,0 +1,63 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+}
+
+/* ---------- Home Page ---------- */
+
+.headerButton {
+    background-color: transparent;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.headerButtonContainer {
+    border-bottom: 1px solid orangered;
+}
+
+
+.contentContainer {
+    text-align: center;
+}
+
+.contentContainer p {
+    width: 500px;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    border-style: none;
+      border-bottom-style: none;
+    outline: none;
+}  
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentImage {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- Character Page ---------- */
