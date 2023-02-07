@@ -2,9 +2,9 @@ const createAbout = () => {
 
     let aboutContainer = document.createElement('div');
     aboutContainer.className = 'aboutContainer';
-    aboutContainer.appendChild(createLink('Github', './Octicons-mark-github.svg'));
-    aboutContainer.appendChild(createLink('Smashwiki', './SmashBall.svg'));
-    aboutContainer.appendChild(createLink('twitter', './t.svg'));
+    aboutContainer.appendChild(createLink('Github', '../images/Octicons-mark-github.svg'));
+    aboutContainer.appendChild(createLink('Smashwiki', '../images/SmashBall.svg'));
+    aboutContainer.appendChild(createLink('twitter', '../images/t.svg'));
 
     return aboutContainer;
 }
@@ -13,15 +13,16 @@ const createLink = (website, logo) => {
 
     let link = document.createElement('div');
     link.className = 'link';
-
-    const websiteName = document.createElement('p');
-    websiteName.textContent = website;
-
+    
     const imageSrc = document.createElement('img');
     imageSrc.src = logo;
-
-    link.appendChild(websiteName);
+    
+    const websiteName = document.createElement('p');
+    websiteName.textContent = website;
+    
     link.appendChild(imageSrc);
+    link.appendChild(websiteName);
+
     return link;
 }
 

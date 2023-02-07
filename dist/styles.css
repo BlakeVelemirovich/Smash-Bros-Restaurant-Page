@@ -63,5 +63,19 @@ button {
 /* ---------- Character Page ---------- */
 
 /* ---------- About Page ---------- */
+.aboutContainer {
+    display: flex;
+}
 
+.link {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.link img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1.6rem;
+}
 

@@ -16,22 +16,36 @@ let contentSelector = document.querySelector('#content');
 contentSelector.appendChild(headerContainer);
 contentSelector.appendChild(buttonContainer);
 
-// Header buttons factory function and creation
-let createButtons = function(name) {
+// Header buttons
 
-    let newButton = document.createElement('button');
-    newButton.className = 'headerButton';
-    let text = document.createTextNode(name);
-    newButton.appendChild(text);
-    buttonContainer.appendChild(newButton);
-}
+let homeBtn = document.createElement('button');
+let characterBtn = document.createElement('button');
+let aboutBtn = document.createElement('button');
 
-window.onload = () => {
-        
-        createButtons('Home');
-        createButtons('Characters');
-        createButtons('About Me');
-}
+homeBtn.className = 'headerButton';
+characterBtn.className = 'headerButton';
+aboutBtn.className = 'headerButton';
+
+homeBtn.innerHTML = 'Home';
+characterBtn.innerHTML = 'Characters';
+aboutBtn.innerHTML = 'About';
+
+homeBtn.addEventListener('click', function() {
+    main.textContent = '';
+    main.appendChild(createHome());
+});
+
+aboutBtn.addEventListener('click', function() {
+    main.textContent = '';
+    main.appendChild(createAbout());
+});
+
+buttonContainer.appendChild(homeBtn);
+buttonContainer.appendChild(characterBtn);
+buttonContainer.appendChild(aboutBtn);
 
 //Initial invoking of the Home Page
-contentSelector.appendChild(createHome());
+let main = document.createElement('div');
+main.className = 'main';
+contentSelector.appendChild(main);
+main.appendChild(createHome());
