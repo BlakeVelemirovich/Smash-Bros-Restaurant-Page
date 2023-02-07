@@ -1,4 +1,5 @@
 import createHome from "./Home";
+import createAbout from "./aboutMe";
 
 // Header title Creation
 let homeTitle = document.createElement('h1');
