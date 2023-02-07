@@ -6,7 +6,7 @@ homeTitle.appendChild(titleText);
 let headerContainer = document.createElement('div');
 let buttonContainer = document.createElement('div');
 headerContainer.className = 'header';
-buttonContainer.className = 'headerButtons';
+buttonContainer.className = 'headerButtonContainer';
 headerContainer.appendChild(homeTitle);
 
 let contentSelector = document.querySelector('#content');
@@ -17,6 +17,7 @@ contentSelector.appendChild(buttonContainer);
 let createButtons = function(name) {
 
     let newButton = document.createElement('button');
+    newButton.className = 'headerButton';
     let text = document.createTextNode(name);
     newButton.appendChild(text);
     buttonContainer.appendChild(newButton);
@@ -35,11 +36,12 @@ contentContainer.className = 'contentContainer';
 contentSelector.appendChild(contentContainer);
 
 let contentP = document.createElement('p');
-let contentText = document.createTextNode('Just a little information about the characters I play and smash and my smash links');
+let contentText = document.createTextNode('This website is all about my personal Super Smash Bros. journey. It is a platform to showcase my history and evolution as a Smash player, including my favorite characters, notable victories, and milestones in my Smash career.');
 contentP.appendChild(contentText);
 contentContainer.appendChild(contentP);
 
 let contentImage = document.createElement('img');
+contentImage.className = 'contentImage';
 contentImage.src = '../images/Smash.png';
 contentContainer.appendChild(contentImage);
 
