@@ -1,4 +1,5 @@
 const createHome = () => {
+    
     let contentContainer = document.createElement('div');
     contentContainer.className = 'contentContainer';
 

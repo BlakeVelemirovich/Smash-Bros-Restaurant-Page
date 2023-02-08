@@ -1,5 +1,6 @@
 import createHome from "./Home";
 import createAbout from "./aboutMe";
+import createCharacters from "./Characters";
 
 // Header title Creation
 let homeTitle = document.createElement('h1');
@@ -33,6 +34,11 @@ aboutBtn.innerHTML = 'About';
 homeBtn.addEventListener('click', function() {
     main.textContent = '';
     main.appendChild(createHome());
+});
+
+characterBtn.addEventListener('click', function() {
+    main.textContent = '';
+    main.appendChild(createCharacters());
 });
 
 aboutBtn.addEventListener('click', function() {

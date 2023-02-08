@@ -61,6 +61,16 @@ button {
 }
 
 /* ---------- Character Page ---------- */
+.characterContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.character img {
+    width: 20vw;
+    height: 30vh;
+}
+
 
 /* ---------- About Page ---------- */
 .aboutContainer {
