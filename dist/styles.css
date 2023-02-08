@@ -9,8 +9,8 @@ body {
     font-size: 1.6rem;
 }
 
-/* ---------- Home Page ---------- */
 
+/* ---------- Header ---------- */
 .headerButton {
     background-color: transparent;
     padding: 2rem;
@@ -21,7 +21,11 @@ body {
     border-bottom: 1px solid orangered;
 }
 
+#active {
+    border-top: 1px solid orangered;
+}
 
+/* ---------- Home Page ---------- */
 .contentContainer {
     text-align: center;
 }
@@ -64,6 +68,13 @@ button {
 .characterContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 70vw;
+    margin-left: 12vw;
+}
+
+.character {
+    margin-top: 3rem;
+    padding: 2rem;
 }
 
 .character img {

@@ -32,16 +32,22 @@ characterBtn.innerHTML = 'Characters';
 aboutBtn.innerHTML = 'About';
 
 homeBtn.addEventListener('click', function() {
+    removeActive();
+    homeBtn.id = 'active';
     main.textContent = '';
     main.appendChild(createHome());
 });
 
 characterBtn.addEventListener('click', function() {
+    removeActive();
+    characterBtn.id = 'active';
     main.textContent = '';
     main.appendChild(createCharacters());
 });
 
 aboutBtn.addEventListener('click', function() {
+    removeActive();
+    aboutBtn.id = 'active';
     main.textContent = '';
     main.appendChild(createAbout());
 });
@@ -49,6 +55,14 @@ aboutBtn.addEventListener('click', function() {
 buttonContainer.appendChild(homeBtn);
 buttonContainer.appendChild(characterBtn);
 buttonContainer.appendChild(aboutBtn);
+
+const removeActive = () => {
+
+    const headerButtons = document.querySelectorAll('.headerButton');    
+    headerButtons.forEach(button => {
+        button.id = '';
+    });
+}
 
 //Initial invoking of the Home Page
 let main = document.createElement('div');
